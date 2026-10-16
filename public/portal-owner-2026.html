@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Private Sanctuary Management — Tarot with Jiji</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #F9F5F0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .portal-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      width: 100%;
+      flex: 1;
+    }
+    .portal-card {
+      background: #FFFFFF;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      min-height: 600px;
+      display: flex;
+      flex-direction: column;
+    }
+    .portal-nav {
+      background: #FFFDFB;
+      border-bottom: 1px solid var(--color-border);
+      padding: 16px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .portal-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .portal-brand {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+    .portal-badge {
+      font-size: 0.75rem;
+      background: rgba(197, 160, 89, 0.2);
+      color: var(--color-gold-dark);
+      padding: 3px 10px;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <div class="portal-container">
+    <div class="portal-card">
+      <div class="portal-nav">
+        <div class="portal-title-wrap">
+          <span style="font-size: 1.6rem;">🔮</span>
+          <div>
+            <div class="portal-brand">Tarot with Jiji — Owner Verification Portal</div>
+            <div style="font-size: 0.82rem; color: var(--color-text-muted);">Confidential Order Management & UPI Verification</div>
+          </div>
+        </div>
+        <div>
+          <span class="portal-badge">🔒 Restricted Access</span>
+        </div>
+      </div>
+
+      <!-- PIN LOGIN VIEW -->
+      <div id="admin-login-view" style="padding: 80px 30px; text-align: center; max-width: 420px; margin: 0 auto;">
+        <div style="font-size: 2.5rem; margin-bottom: 12px;">🗝️</div>
+        <h2 class="serif-heading" style="margin-bottom: 8px;">Enter Owner Security PIN</h2>
+        <p style="color: var(--color-text-muted); margin-bottom: 24px; font-size: 0.95rem;">Enter your confidential PIN to view and verify customer bookings.</p>
+        <input type="password" id="admin-pin-input" class="form-input" style="text-align: center; font-size: 1.3rem; letter-spacing: 6px; padding: 12px;" placeholder="••••••••">
+        <button class="btn-primary" id="btn-admin-login" style="width: 100%; margin-top: 16px; justify-content: center;">Unlock Sanctuary Dashboard</button>
+      </div>
+
+      <!-- DASHBOARD VIEW -->
+      <div id="admin-dashboard-view" style="display: none; flex-direction: column; flex: 1;">
+        <div class="admin-tabs" style="padding: 16px 24px; background: #FFFDFB; border-bottom: 1px solid var(--color-border); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+          <button class="admin-tab-btn active" data-filter="all">All Orders</button>
+          <button class="admin-tab-btn" data-filter="Awaiting Verification">⏳ Awaiting Verification</button>
+          <button class="admin-tab-btn" data-filter="Pending Payment">Pending Payment</button>
+          <button class="admin-tab-btn" data-filter="Confirmed">✓ Confirmed</button>
+          <button class="admin-tab-btn" data-filter="Rejected">✕ Rejected</button>
+          <button class="admin-tab-btn" id="btn-refresh-orders" style="background:#FFFDFB; border:1px solid #E8D8D8;">🔄 Refresh</button>
+          <button class="admin-tab-btn" id="btn-view-outbox" style="margin-left: auto; background:#F9F5F0; border:1px solid #E8D8D8;">📬 Simulated Outbox</button>
+          <button class="admin-tab-btn" id="btn-admin-logout" style="background:none; border:none; color:var(--color-danger); cursor:pointer;">🚪 Log Out</button>
+        </div>
+
+        <div class="admin-body" id="admin-modal-body-content" style="padding: 24px; flex: 1; overflow-x: auto;">
+          <table class="orders-table">
+            <thead>
+              <tr>
+                <th>Booking Ref</th>
+                <th>Client Details</th>
+                <th>Service & Slot</th>
+                <th>Amount</th>
+                <th>12-Digit UTR</th>
+                <th>Status</th>
+                <th>Verification Actions</th>
+              </tr>
+            </thead>
+            <tbody id="admin-orders-tbody">
+              <!-- Dynamically populated via admin.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer style="text-align: center; padding: 20px; font-size: 0.85rem; color: #888;">
+    Tarot with Jiji • Private Owner Portal • Do not share this URL
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>

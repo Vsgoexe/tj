@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarot with Jiji — Victorian Botanical Mysticism & Intuitive Readings</title>
+  <meta name="description" content="Sacred tarot consultations and intuitive astrology with Jiji (Jeevani V). 7 years of mystical practice delivering compassionate clarity and empowering guidance.">
+  
+  <!-- Favicon / Crest -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo">
+        <div class="brand-crest">✦</div>
+        <div class="brand-text-wrap">
+          <span class="brand-title">Tarot with Jiji</span>
+          <span class="brand-subtitle">Intuitive Sanctuary</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Sanctuary</a></li>
+          <li><a href="#services" class="nav-link">The Offerings</a></li>
+          <li><a href="#how-it-works" class="nav-link">The Journey</a></li>
+          <li><a href="#about" class="nav-link">About Jiji</a></li>
+          <li><a href="#book" class="btn-book-nav">✦ Book a Reading</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-toggle" onclick="document.getElementById('nav-menu').classList.toggle('active')">☰</button>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="gold-star">✦</span> Victorian Botanical Mysticism
+          </div>
+          <h1 class="hero-title serif-heading">
+            Unveil What the <span>Stars & Cards</span> Hold for You.
+          </h1>
+          <p class="hero-description">
+            Welcome to the sacred alcove of Jiji (Jeevani V) — blending 7 years of classical astrology, botanical lore, and intuitive tarot to illuminate your life path, love, and vocational crossroads with compassionate clarity.
+          </p>
+          <div class="hero-actions">
+            <a href="#book" class="btn-primary">✦ Reserve Your Sacred Reading</a>
+            <a href="#services" class="btn-secondary">Explore 7 Offerings</a>
+          </div>
+          <div class="hero-badges">
+            <div class="hero-badge-item">
+              <span class="hero-badge-icon">🌿</span>
+              <span><strong>7 Years</strong> Mastery</span>
+            </div>
+            <div class="hero-badge-item">
+              <span class="hero-badge-icon">🕊️</span>
+              <span><strong>100%</strong> Confidential</span>
+            </div>
+            <div class="hero-badge-item">
+              <span class="hero-badge-icon">⏳</span>
+              <span><strong>48h</strong> Turnaround</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-frame-outer">
+            <div class="portrait-frame-inner">
+              <img src="/assets/jiji_portrait.jpg" alt="Jiji (Jeevani V) — Tarot Reader & Astrologer" class="portrait-img">
+            </div>
+            <div class="portrait-badge-overlay">
+              <div class="portrait-badge-title">Jiji (Jeevani V)</div>
+              <div class="portrait-badge-desc">7 Years Practicing Reader</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SACRED OFFERINGS (7 SERVICES WITH AUTHORITATIVE INR PRICING) -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Sacred Consultations</span>
+          <h2 class="serif-heading">The Seven Readings</h2>
+          <div class="botanical-divider">✦ 🌿 ✦</div>
+          <p class="section-subtitle">
+            Curated spreads channeled with profound devotion and ethical spiritual integrity. Transparent fixed pricing in Indian Rupees.
+          </p>
+        </div>
+
+        <div class="services-grid" id="services-grid-container">
+          <!-- Dynamically loaded via loadServices() -->
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS (3-STEP BREAKDOWN) -->
+    <section class="how-it-works-section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">The Experience</span>
+          <h2 class="serif-heading">How Your Sacred Reading Unfolds</h2>
+          <div class="botanical-divider">✦ 🌿 ✦</div>
+          <p class="section-subtitle">A seamless, compassionate consultation designed to bring you absolute peace of mind.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">I</div>
+            <h3 class="step-title serif-heading">Select Your Spread</h3>
+            <p class="step-desc">
+              Choose from our 7 tailored intuitive offerings — whether you need deep 60-minute live exploration or a swift 48-hour channeled written report.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">II</div>
+            <h3 class="step-title serif-heading">Share Intentions & Slot</h3>
+            <p class="step-desc">
+              Pour out your questions, birth details, and pick an undisturbed live time slot (held for 30 minutes) or submit written focus areas.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">III</div>
+            <h3 class="step-title serif-heading">Receive Channeled Clarity</h3>
+            <p class="step-desc">
+              After quick manual UPI verification, connect directly with Jiji via live chat/call or receive your comprehensive celestial dossier.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING FUNNEL (MULTI-STEP INTERACTIVE WIZARD) -->
+    <section class="booking-section" id="book">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Reserve Your Space</span>
+          <h2 class="serif-heading">Intuitive Booking & Consultation Portal</h2>
+          <div class="botanical-divider">✦ 🌿 ✦</div>
+        </div>
+
+        <div class="booking-wrapper" id="booking-funnel">
+          <!-- Wizard Progress Bar -->
+          <div class="wizard-header">
+            <div class="wizard-steps">
+              <div class="step-indicator active" data-step="1" onclick="goToWizardStep(1)">
+                <div class="step-circle">1</div>
+                <span class="step-label">Service</span>
+              </div>
+              <div class="step-indicator" data-step="2" onclick="goToWizardStep(2)">
+                <div class="step-circle">2</div>
+                <span class="step-label">Intake</span>
+              </div>
+              <div class="step-indicator" data-step="3" onclick="goToWizardStep(3)">
+                <div class="step-circle">3</div>
+                <span class="step-label">Slot</span>
+              </div>
+              <div class="step-indicator" data-step="4" onclick="goToWizardStep(4)">
+                <div class="step-circle">4</div>
+                <span class="step-label">Review</span>
+              </div>
+              <div class="step-indicator" data-step="5">
+                <div class="step-circle">5</div>
+                <span class="step-label">Payment</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wizard Panes -->
+          <div class="wizard-body">
+            
+            <!-- STEP 1: SELECT SERVICE -->
+            <div class="wizard-step-pane active" id="step-1-pane">
+              <h3 class="serif-heading" style="margin-bottom: 8px;">Step 1: Choose Your Sacred Offering</h3>
+              <p style="margin-bottom: 24px; font-size: 0.95rem;">Select the consultation spread that resonates most with your current energetic needs.</p>
+              
+              <div class="service-options-list" id="service-selection-list">
+                <!-- Dynamically populated -->
+              </div>
+
+              <div class="wizard-footer">
+                <div></div>
+                <button type="button" class="btn-primary" id="btn-step1-next">Continue to Details →</button>
+              </div>
+            </div>
+
+            <!-- STEP 2: CLIENT INTAKE DETAILS -->
+            <div class="wizard-step-pane" id="step-2-pane">
+              <h3 class="serif-heading" style="margin-bottom: 8px;">Step 2: Sacred Intake & Intentions</h3>
+              <p style="margin-bottom: 24px; font-size: 0.95rem;">Your privacy is strictly honored. Share what is weighing on your soul.</p>
+
+              <form id="intake-form" onsubmit="return false;">
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label class="form-label">Full Name <span class="required">*</span></label>
+                    <input type="text" class="form-input" id="input-fullName" placeholder="e.g. Ananya Sharma" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Email Address <span class="required">*</span></label>
+                    <input type="email" class="form-input" id="input-email" placeholder="ananya@example.com" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">WhatsApp Phone Number with Country Code <span class="required">*</span></label>
+                  <input type="tel" class="form-input" id="input-phone" placeholder="+91 98765 43210" required>
+                  <span style="font-size:0.78rem; color:#888;">Used for session links, card photos, and consultation delivery.</span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Specific Question / Focus Area <span class="required">*</span></label>
+                  <textarea class="form-textarea" id="input-question" rows="4" placeholder="Describe the circumstances, questions, or themes you want the cards and stars to illuminate..." required></textarea>
+                </div>
+
+                <!-- Conditional Birth Details (Required for Birth Chart reading) -->
+                <div class="form-grid-2" id="birth-details-group">
+                  <div class="form-group">
+                    <label class="form-label">Birth Date <span class="required" id="birth-required-star" style="display:none;">*</span></label>
+                    <input type="date" class="form-input" id="input-birthDate">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Exact Birth Time</label>
+                    <input type="time" class="form-input" id="input-birthTime">
+                  </div>
+                </div>
+
+                <!-- Preferred Communication Mode (Live Readings only) -->
+                <div class="form-group" id="comm-mode-group">
+                  <label class="form-label">Preferred Live Communication Mode</label>
+                  <div style="display:flex; gap: 24px; margin-top: 8px;">
+                    <label style="display:flex; align-items:center; gap:8px; cursor:pointer;">
+                      <input type="radio" name="commMode" value="Text Chat" checked> Live Text Chat (WhatsApp)
+                    </label>
+                    <label style="display:flex; align-items:center; gap:8px; cursor:pointer;">
+                      <input type="radio" name="commMode" value="Voice/Video Call"> Voice/Video Call (Meet/WhatsApp)
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Mandatory Consent Checkbox -->
+                <div class="form-group" style="margin-top: 24px;">
+                  <label style="display:flex; align-items:flex-start; gap:12px; cursor:pointer;">
+                    <input type="checkbox" id="input-consent" style="margin-top:4px;" required>
+                    <span style="font-size: 0.88rem; color: #4A4A54;">
+                      I understand that readings with Jiji are for intuitive guidance, spiritual reflection, and personal empowerment, and do not replace legal, medical, or financial counsel. <span class="required">*</span>
+                    </span>
+                  </label>
+                </div>
+              </form>
+
+              <div class="wizard-footer">
+                <button type="button" class="btn-secondary" id="btn-step2-back">← Back</button>
+                <button type="button" class="btn-primary" id="btn-step2-next">Continue →</button>
+              </div>
+            </div>
+
+            <!-- STEP 3: LIVE CALENDAR SLOT SELECTOR -->
+            <div class="wizard-step-pane" id="step-3-pane">
+              <h3 class="serif-heading" style="margin-bottom: 8px;">Step 3: Select Your Consultation Slot</h3>
+              <p style="margin-bottom: 20px; font-size: 0.95rem;">Pick an undisturbed time for your live session. Times are displayed in Indian Standard Time (IST).</p>
+
+              <!-- Slot Hold Notification -->
+              <div class="slot-hold-timer-bar">
+                <span>⏱️ Slots are placed on a <strong>30-minute reservation hold</strong> during booking.</span>
+                <span class="timer-countdown" id="hold-timer-display">30:00</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Select Date:</label>
+                <div class="date-chips-scroll" id="date-chips-container">
+                  <!-- Dynamically populated with next 7 days -->
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Available Time Slots (IST):</label>
+                <div class="slots-grid" id="slots-container">
+                  <!-- Dynamically populated from /api/slots -->
+                </div>
+              </div>
+
+              <div class="wizard-footer">
+                <button type="button" class="btn-secondary" id="btn-step3-back">← Back</button>
+                <button type="button" class="btn-primary" id="btn-step3-next">Review Summary →</button>
+              </div>
+            </div>
+
+            <!-- STEP 4: SUMMARY REVIEW -->
+            <div class="wizard-step-pane" id="step-4-pane">
+              <h3 class="serif-heading" style="margin-bottom: 8px;">Step 4: Summary Review</h3>
+              <p style="margin-bottom: 24px; font-size: 0.95rem;">Please review your intake details and selected offering before proceeding to the payment screen.</p>
+
+              <div class="review-summary-card" id="summary-review-card">
+                <!-- Dynamically populated -->
+              </div>
+
+              <div class="wizard-footer">
+                <button type="button" class="btn-secondary" id="btn-step4-back">← Edit Details</button>
+                <button type="button" class="btn-primary" id="btn-step4-confirm">Proceed to Payment →</button>
+              </div>
+            </div>
+
+            <!-- STEP 5: MANUAL UPI PAYMENT SCREEN -->
+            <div class="wizard-step-pane" id="step-5-pane">
+              <div class="upi-payment-container">
+                <h3 class="serif-heading" style="margin-bottom: 8px;">Step 5: Sacred UPI Deposit</h3>
+                <p style="margin-bottom: 24px; font-size: 0.95rem; max-width: 540px;">
+                  Scan the Google Pay QR code or copy Jiji's verified UPI ID. Once completed, enter your bank's <strong>12-digit UTR reference</strong> below for instant owner verification.
+                </p>
+
+                <!-- Verified Payee Card -->
+                <div class="upi-info-badge">
+                  <div class="upi-id-box">
+                    <span style="font-size: 1.5rem;">📱</span>
+                    <div style="text-align: left;">
+                      <div style="font-size: 0.78rem; color:#888; text-transform:uppercase;">Verified Payee</div>
+                      <div style="font-weight: 700; color: #1E1E24;" id="payee-display-name">jeevani V</div>
+                      <div style="font-family: monospace; font-size: 0.95rem; color: #7A2E45;" id="payee-upi-id">jeevani.v@oksbi</div>
+                    </div>
+                  </div>
+                  <button class="upi-copy-btn" id="btn-copy-upi">Copy UPI ID</button>
+                </div>
+
+                <!-- Dynamic QR Code Card -->
+                <div class="qr-card-wrap">
+                  <div style="font-size: 0.82rem; font-weight: 600; color: #7A2E45; margin-bottom: 12px; letter-spacing: 0.05em; text-transform: uppercase;">
+                    Official Google Pay / UPI QR
+                  </div>
+                  <img id="upi-qr-image" src="" alt="Google Pay UPI QR Code" class="qr-image">
+                  <div style="margin-top: 12px; font-size: 0.9rem; font-weight: 700; color: #1E1E24;">
+                    Amount: <span id="payment-amount-display" style="color:#7A2E45; font-size:1.15rem;">₹999</span>
+                  </div>
+                  <div style="font-size: 0.75rem; color: #888;">Ref: <span id="booking-ref-display">TJ-XXXXXX</span></div>
+                </div>
+
+                <!-- 1-Click Mobile Intent Deep Link -->
+                <a id="btn-mobile-upi" href="#" class="btn-mobile-upi">
+                  <span>⚡</span> Pay via GPay / PhonePe / Paytm / Any UPI
+                </a>
+
+                <!-- UTR Submission Form -->
+                <div class="utr-form-wrap">
+                  <label class="form-label" style="font-size: 0.95rem;">
+                    12-Digit UPI Transaction ID / UTR <span class="required">*</span>
+                  </label>
+                  <p style="font-size: 0.8rem; color: #666; margin-bottom: 12px;">
+                    Found in your payment app under "UPI Ref No.", "UTR", or "Transaction ID" (must be exactly 12 numeric digits).
+                  </p>
+                  <input type="text" class="form-input utr-input" id="input-utr-number" maxlength="12" placeholder="e.g. 429384918231" required>
+                  
+                  <button type="button" class="btn-primary" id="btn-submit-utr" style="width: 100%; margin-top: 16px; justify-content: center;">
+                    Submit Transaction Reference →
+                  </button>
+                  
+                  <a href="#home" class="pay-later-link" id="link-pay-later">
+                    I'll Pay Later (Hold slot for 30 minutes)
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT READER TEASER -->
+    <section class="about-teaser-section" id="about">
+      <div class="container about-grid">
+        <div class="about-image-card">
+          <img src="/assets/celestial_botanical_bg.jpg" alt="Botanical Mysticism">
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag">Spiritual Integrity</span>
+          <h2 class="serif-heading">Meet Jiji (Jeevani V)</h2>
+          <div class="botanical-divider" style="margin: 16px 0;">✦ 🌿 ✦</div>
+          <p class="about-text">
+            For over seven years, I have walked the winding paths of intuitive tarot and celestial astrology. My readings are rooted in botanical mysticism, classical hermetic symbolism, and deep psychological compassion.
+          </p>
+          <p class="about-text">
+            I do not practice fear-based fatalism. Every spread is a mirror held to your soul's sovereign free will — revealing the energetic tides, clearing emotional brambles, and empowering you to make decisions with grace and certainty.
+          </p>
+
+          <div class="about-pillars">
+            <div class="pillar-item">
+              <div class="pillar-title">Uncompromising Privacy</div>
+              <div class="pillar-desc">Your stories, struggles, and charts remain held in complete sacred confidentiality.</div>
+            </div>
+            <div class="pillar-item">
+              <div class="pillar-title">Empowerment Focused</div>
+              <div class="pillar-desc">Guidance that restores agency to your hands, never disempowering superstition.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Whispers from Seekers</span>
+          <h2 class="serif-heading">Kind Words & Reflections</h2>
+          <div class="botanical-divider">✦ 🌿 ✦</div>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars-row">★★★★★</div>
+            <p class="testimonial-quote">
+              "Jiji's 1-hour session felt like stepping into an ancient temple of clarity. She pinpointed my exact career dilemma and gave me peace I haven't felt in months."
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">Meera K.</span>
+              <span class="author-tag">Bangalore • 1hr Reading</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars-row">★★★★★</div>
+            <p class="testimonial-quote">
+              "The Birth Chart reading gave me goosebumps. Her understanding of planetary nuances and karmic debts was remarkably accurate and deeply healing."
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">Rohan S.</span>
+              <span class="author-tag">Mumbai • Birth Chart</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars-row">★★★★★</div>
+            <p class="testimonial-quote">
+              "A truly ethical reader. Jiji never rushes, listens with genuine warmth, and leaves you feeling grounded and hopeful. Highly recommended!"
+            </p>
+            <div class="testimonial-author">
+              <span class="author-name">Priyanka D.</span>
+              <span class="author-tag">Chennai • Love Reading</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SANCTUARY & ETHICS DISCLAIMER BANNER -->
+    <section class="sanctuary-banner">
+      <div class="container sanctuary-content">
+        <h2 class="sanctuary-title serif-heading">The Sacred Sanctuary Code</h2>
+        <p class="sanctuary-text">
+          Tarot is an intuitive art form and mirror for self-reflection. Jiji does not predict medical diagnoses, legal judgments, or financial speculations. Your destiny is co-created with the universe through your own conscious choices. You enter here as a sovereign soul.
+        </p>
+      </div>
+    </section>
+
+    <!-- LEGAL SECTIONS MODALS / ACCORDIONS -->
+    <section class="container" style="padding: 60px 0; border-top: 1px solid var(--color-border);" id="legal">
+      <h3 class="serif-heading" style="text-align:center; margin-bottom:24px;">Legal & Sanctuary Policies</h3>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:20px; font-size:0.9rem;">
+        <div style="background:#FFFDFB; border:1px solid var(--color-border); padding:20px; border-radius:8px;" id="legal-privacy">
+          <h4 class="serif-heading">Privacy Policy</h4>
+          <p style="font-size:0.85rem; margin-top:8px;">We treat all names, WhatsApp contacts, birth records, and queries with absolute confidentiality. Your data is never sold, shared, or repurposed.</p>
+        </div>
+        <div style="background:#FFFDFB; border:1px solid var(--color-border); padding:20px; border-radius:8px;" id="legal-terms">
+          <h4 class="serif-heading">Terms of Service</h4>
+          <p style="font-size:0.85rem; margin-top:8px;">By booking, you affirm you are at least 18 years old and agree to mutual respectful communication during live sessions and written reports.</p>
+        </div>
+        <div style="background:#FFFDFB; border:1px solid var(--color-border); padding:20px; border-radius:8px;" id="legal-refund">
+          <h4 class="serif-heading">Refund Policy</h4>
+          <p style="font-size:0.85rem; margin-top:8px;">Consultations involve bespoke time and channeled energy. Once a live reading begins or a written report is delivered, readings are non-refundable.</p>
+        </div>
+        <div style="background:#FFFDFB; border:1px solid var(--color-border); padding:20px; border-radius:8px;" id="legal-disclaimer">
+          <h4 class="serif-heading">Spiritual Guidance Disclaimer</h4>
+          <p style="font-size:0.85rem; margin-top:8px;">Readings are intended for spiritual insight and self-discovery. They are not legal, medical, psychiatric, or certified financial advice.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3 class="serif-heading">Tarot with Jiji</h3>
+        <p class="footer-desc">
+          Victorian botanical mysticism, celestial wisdom, and compassionate intuitive consultations by Jeevani V.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Offerings</h4>
+        <ul class="footer-links">
+          <li><a href="#book" onclick="startBookingForService('tarot-1hr')">1-Hr Live Reading (₹999)</a></li>
+          <li><a href="#book" onclick="startBookingForService('tarot-10min')">10-Min In-Depth (₹200)</a></li>
+          <li><a href="#book" onclick="startBookingForService('pick-a-card')">Pick a Card (₹300)</a></li>
+          <li><a href="#book" onclick="startBookingForService('future-predictions')">Future Predictions (₹300)</a></li>
+          <li><a href="#book" onclick="startBookingForService('birth-chart')">Birth Chart Reading (₹150)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Sanctuary</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Sacred Home</a></li>
+          <li><a href="#about">About Jiji</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#legal-privacy">Privacy & Confidentiality</a></li>
+          <li><a href="#legal-disclaimer">Ethics Disclaimer</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Direct Sanctuary</h4>
+        <p style="font-size:0.88rem; color:#A0A0AA; margin-bottom:10px;">
+          Reader: Jeevani V<br>
+          Official UPI: <code>jeevani.v@oksbi</code><br>
+          WhatsApp: +91 98845 21000
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Tarot with Jiji. All Rights Reserved. Crafted with Victorian Botanical Elegance.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
