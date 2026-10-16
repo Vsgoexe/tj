@@ -15,9 +15,9 @@ npm start
 node server.js
 ```
 
-### Accessing the Protected Admin Portal
-- **URL**: Open [http://localhost:3000/#admin](http://localhost:3000/#admin) or click the **"Admin Portal"** button in the header/footer.
-- **Owner PIN**: `jiji2026`
+### Accessing the Protected Owner Portal
+- **URL**: Open [http://localhost:3000/portal-owner-2026.html](http://localhost:3000/portal-owner-2026.html) (Isolated private URL, not linked on public pages).
+- **Owner PIN**: `Jevani1331!` (Configurable via `ADMIN_PIN` environment variable).
 
 ---
 
@@ -50,13 +50,14 @@ node server.js
 - **Step 4: Summary Review** — Comprehensive card breaking down client details, consultation format, chosen slot or 48h turnaround, and amount in ₹ INR.
 - **Step 5: Manual UPI Payment Screen** —
   * Verified Payee: **`jeevani V`**
-  * Official UPI ID: **`jeevani.v@oksbi`** with 1-click **Copy** button and tooltip.
+  * Official UPI ID: **`jeevanvedavendra@oksbi`** with 1-click **Copy** button and tooltip.
   * Dynamic high-contrast Google Pay / UPI QR Code.
-  * 1-Click Mobile Intent Deep Link: `upi://pay?pa=jeevani.v@oksbi&pn=jeevani%20V&am=<AMOUNT>&cu=INR&tn=Tarot-<BOOKING_REF>`
+  * 1-Click Mobile Intent Deep Link: `upi://pay?pa=jeevanvedavendra@oksbi&pn=jeevani%20V&am=<AMOUNT>&cu=INR&tn=Tarot-<BOOKING_REF>`
   * **Strict 12-Digit Numeric UTR Validation**: Rejects non-12-digit or non-numeric inputs.
   * **Database Uniqueness Enforcement**: Prevents reused or duplicate transaction IDs.
   * **Status Lifecycle**: Transitions from `Pending Payment` to `Awaiting Verification`.
   * **Strict Success Copy**: *"Payment received, we are verifying it. You will receive an email once confirmed."* (Under no circumstances says "Confirmed" or "Amount Paid" prematurely).
+  * **WhatsApp 1-Click Dispatch**: Auto-opens WhatsApp to message Jiji directly with booking reference and UTR.
   * *"I'll Pay Later"* link to exit while holding the slot.
 
 ### 3. Owner Approval Workflow & Anti-Virus Bot Protection

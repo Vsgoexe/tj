@@ -31,10 +31,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Owner Config
 const OWNER_CONFIG = {
   payeeName: process.env.PAYEE_NAME || 'jeevani V',
-  upiId: process.env.UPI_ID || 'jeevani.v@oksbi',
+  upiId: process.env.UPI_ID || 'jeevanvedavendra@oksbi',
   ownerEmail: process.env.OWNER_EMAIL || 'jeevani.tarot@gmail.com',
-  ownerPhone: process.env.OWNER_PHONE || '919741785505',
-  adminPin: process.env.ADMIN_PIN || 'jiji2026',
+  ownerPhone: process.env.OWNER_PHONE || '919686676266',
+  adminPin: process.env.ADMIN_PIN || 'Jevani1331!',
   holdDurationMs: 30 * 60 * 1000 // 30 minutes
 };
 
@@ -597,7 +597,7 @@ app.post('/api/verify-action', (req, res) => {
             <p style="margin: 0 0 8px 0;"><strong>Service:</strong> ${booking.serviceName}</p>
             <p style="margin: 0 0 8px 0;"><strong>Booking Reference:</strong> ${booking.bookingRef}</p>
             ${booking.slotDate ? `<p style="margin: 0 0 8px 0;"><strong>Scheduled Time:</strong> ${booking.slotDate} at ${booking.slotTime} IST</p>` : `<p style="margin: 0 0 8px 0;"><strong>Turnaround:</strong> Within 48 hours to this email and WhatsApp</p>`}
-            ${booking.commMode ? `<p style="margin: 0;"><strong>Session Mode:</strong> ${booking.commMode} via WhatsApp (+91 98845 21000) or Google Meet</p>` : ''}
+            ${booking.commMode ? `<p style="margin: 0;"><strong>Session Mode:</strong> ${booking.commMode} via WhatsApp (+91 96866 76266) or Google Meet</p>` : ''}
           </div>
 
           <h3 style="color: #7A2E45; margin-top: 24px;">Preparing for Your Session:</h3>

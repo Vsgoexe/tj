@@ -132,7 +132,7 @@ class Tarot_JIJI_REST_API {
         }
 
         $payee_name = get_option('tarot_jiji_payee_name', 'jeevani V');
-        $upi_id     = get_option('tarot_jiji_upi_id', 'jeevani.v@oksbi');
+        $upi_id     = get_option('tarot_jiji_upi_id', 'jeevanvedavendra@oksbi');
         $upi_link   = "upi://pay?pa=" . rawurlencode($upi_id) . "&pn=" . rawurlencode($payee_name) . "&am=" . $service['price'] . "&cu=INR&tn=Tarot-" . $booking_ref;
 
         return rest_ensure_response([

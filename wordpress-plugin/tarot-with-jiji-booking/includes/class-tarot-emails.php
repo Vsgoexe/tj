@@ -91,7 +91,7 @@ class Tarot_JIJI_Emails {
                 <p style=\"margin: 0 0 8px 0;\"><strong>Service:</strong> {$booking->service_name}</p>
                 <p style=\"margin: 0 0 8px 0;\"><strong>Booking Reference:</strong> {$booking->booking_ref}</p>
                 " . (!empty($booking->slot_date) ? "<p style=\"margin: 0 0 8px 0;\"><strong>Scheduled Time:</strong> {$booking->slot_date} at {$booking->slot_time} IST</p>" : "<p style=\"margin: 0 0 8px 0;\"><strong>Turnaround:</strong> Within 48 hours delivered to your WhatsApp and email</p>") . "
-                " . (!empty($booking->comm_mode) ? "<p style=\"margin: 0;\"><strong>Session Mode:</strong> {$booking->comm_mode} via WhatsApp (+91 98845 21000) or Google Meet</p>" : "") . "
+                " . (!empty($booking->comm_mode) ? "<p style=\"margin: 0;\"><strong>Session Mode:</strong> {$booking->comm_mode} via WhatsApp (+91 96866 76266) or Google Meet</p>" : "") . "
             </div>
 
             <h3 style=\"color: #7A2E45; margin-top: 24px;\">Preparing for Your Session:</h3>

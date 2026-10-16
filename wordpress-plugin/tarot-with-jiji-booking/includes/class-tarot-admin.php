@@ -257,7 +257,7 @@ class Tarot_JIJI_Admin {
         }
 
         $payee_name = get_option('tarot_jiji_payee_name', 'jeevani V');
-        $upi_id = get_option('tarot_jiji_upi_id', 'jeevani.v@oksbi');
+        $upi_id = get_option('tarot_jiji_upi_id', 'jeevanvedavendra@oksbi');
         $owner_email = get_option('tarot_jiji_owner_email', get_option('admin_email'));
         ?>
         <div class="wrap">

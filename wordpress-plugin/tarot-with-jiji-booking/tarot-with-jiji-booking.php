@@ -78,7 +78,7 @@ class Tarot_With_Jiji {
             'restUrl' => esc_url_raw(rest_url('tarot-jiji/v1/')),
             'nonce'   => wp_create_nonce('wp_rest'),
             'payeeName' => get_option('tarot_jiji_payee_name', 'jeevani V'),
-            'upiId' => get_option('tarot_jiji_upi_id', 'jeevani.v@oksbi'),
+            'upiId' => get_option('tarot_jiji_upi_id', 'jeevanvedavendra@oksbi'),
             'holdDurationMins' => 30
         ]);
     }

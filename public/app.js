@@ -531,7 +531,7 @@ function startSlotHoldCountdown(expiresAtTimestamp) {
 }
 
 function copyUpiId() {
-  const upiId = document.getElementById('payee-upi-id')?.innerText || 'jeevani.v@oksbi';
+  const upiId = document.getElementById('payee-upi-id')?.innerText || 'jeevanvedavendra@oksbi';
   navigator.clipboard.writeText(upiId).then(() => {
     const btn = document.getElementById('btn-copy-upi');
     btn.innerText = '✓ Copied!';
@@ -615,7 +615,7 @@ function renderAwaitingVerificationScreen(response) {
 
       <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
         <button class="btn-secondary" onclick="window.location.hash='#home'">Return to Sanctuary</button>
-        <a href="https://wa.me/919741785505?text=${encodeURIComponent(`Hi Jiji, I have booked ${response.booking.serviceName} (Ref: ${response.booking.bookingRef}). I have paid ₹${response.booking.amount} via UPI (UTR: ${response.booking.utrNumber}). Please confirm my booking!`)}" target="_blank" class="btn-primary" style="background:#25D366; border-color:#1EBE5D; text-decoration:none;">
+        <a href="https://wa.me/919686676266?text=${encodeURIComponent(`Hi Jiji, I have booked ${response.booking.serviceName} (Ref: ${response.booking.bookingRef}). I have paid ₹${response.booking.amount} via UPI (UTR: ${response.booking.utrNumber}). Please confirm my booking!`)}" target="_blank" class="btn-primary" style="background:#25D366; border-color:#1EBE5D; text-decoration:none;">
           <span style="font-size:1.1rem;">📱</span> Confirm with Jiji on WhatsApp
         </a>
       </div>

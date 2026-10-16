@@ -46,7 +46,7 @@ class Tarot_JIJI_DB {
 
         // Default plugin options
         add_option('tarot_jiji_payee_name', 'jeevani V');
-        add_option('tarot_jiji_upi_id', 'jeevani.v@oksbi');
+        add_option('tarot_jiji_upi_id', 'jeevanvedavendra@oksbi');
         add_option('tarot_jiji_owner_email', get_option('admin_email'));
         add_option('tarot_jiji_slot_hold_minutes', 30);
     }

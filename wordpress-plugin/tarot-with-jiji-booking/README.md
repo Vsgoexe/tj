@@ -32,7 +32,7 @@ This is the complete, production-ready WordPress plugin for **Tarot with Jiji (J
 3. The plugin will automatically run `dbDelta` to create the custom MySQL table: `wp_tarot_bookings`.
 4. Navigate to **Tarot Bookings > Settings** to configure:
    - Verified Payee Name: `jeevani V`
-   - Official UPI ID: `jeevani.v@oksbi`
+   - Official UPI ID: `jeevanvedavendra@oksbi`
    - Owner Alert Email: `jeevani.tarot@gmail.com`
 
 ---

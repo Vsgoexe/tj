@@ -125,7 +125,7 @@ if (!defined('ABSPATH')) {
                     <div>
                         <div style="font-size: 12px; color: #777;">VERIFIED PAYEE</div>
                         <div style="font-weight: bold; font-size: 16px;" id="wp-payee-name">jeevani V</div>
-                        <div style="font-family: monospace; color: #7A2E45;" id="wp-payee-upi">jeevani.v@oksbi</div>
+                        <div style="font-family: monospace; color: #7A2E45;" id="wp-payee-upi">jeevanvedavendra@oksbi</div>
                     </div>
                     <button type="button" class="tarot-btn-sm" id="wp-copy-upi-btn">Copy UPI ID</button>
                 </div>
